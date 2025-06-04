@@ -4,8 +4,8 @@
 
 # Hi there
 
-My name is Ed Hinrichsen, I’m an award-winning web dev / digital designer and full stack software engineer. I have a passion for all things technology and design, from software engineering & machine learning to UI/UX & 3D graphics.
+My name is John Yucel. First off, I need to give all credit for this website to Ed Hinrichsen. I did not design this but I absolutelty love this website. I'm gonna try to build off his website to the best of my ability. He's extremely talented so it will definetly be hard.
 
-In addition to my love of technology and design, I am also interested in education, history, economics and politics.
+Anyways, I'm a Virginia Tech Graduate Student who likes playing around with all things tech.I'm trying my best to make a cool website to show off some of my personal projects.
 
-Type "cd ~/projects" then "ls" to see details of some of the projects I have developed over my fifteen plus years of coding experience.
+Type "cd ~/projects" then "ls" to see details of some of the projects I have worked on recently. Again, all credit to Ed Hinrichsen for the code and design.
