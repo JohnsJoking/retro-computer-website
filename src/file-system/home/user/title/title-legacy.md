@@ -8,7 +8,7 @@
 
 #  Hi there,
 #  *I'm John*
-#  -Business Systems Analyst
+#  -Business Analyst
 ##     — Business Information Technology 
 ##        Virginia Tech
 ##
