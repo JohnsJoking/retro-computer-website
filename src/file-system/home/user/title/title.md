@@ -6,11 +6,11 @@
 #  *I'm John Y*
 
 ##   • Tech Guy
-##   • Doing random stuff like this
+##   • Doing random stuff
 
 
 
 
 
-### Welcome to ED-Linux 1.0 LTS
+### Welcome to John & ED-Linux 1.0 LTS
 ### →→ Scroll or type "help" to get started
