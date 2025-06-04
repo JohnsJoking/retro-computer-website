@@ -127,7 +127,7 @@ body {
 
 h1 {
   display: inline-block;
-  color: #f6d4b1;
+  color: #FFB26F;
   background-color: var(--color);
   font-family: "public-pixel", monospace;
   font-size: 2em;
@@ -143,7 +143,7 @@ h2 {
   display: inline-block;
   font-size: 1.2em;
   text-align: center;
-  color: #f6d4b1;
+  color: #FFB26F;
   background-color: var(--color);
   font-family: "public-pixel", monospace;
   padding: 16px;
@@ -293,7 +293,7 @@ a:active {
   cursor: pointer;
   transition: all 0.3s;
   padding: 4px 24px;
-  border: #f6d4b1 solid 1px;
+  border: #FFB26F solid 1px;
   text-decoration: none;
 }
 
