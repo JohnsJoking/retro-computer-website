@@ -3,10 +3,10 @@
 
 ##   Hi there, 
 
-#  *I'm Ed H*
+#  *I'm John Y*
 
-##   • Software Engineer
-##   • Digital Designer
+##   • Tech Guy
+##   • Doing random stuff like this
 
 
 

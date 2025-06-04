@@ -7,9 +7,9 @@
 
 
 #  Hi there,
-#  *I'm Edward*
-#  -Creative Developer
-##     — Computer Science graduate of
-##        the University of Melbourne
+#  *I'm John*
+#  -Business Systems Analyst
+##     — Business Information Technology 
+##        Virginia Tech
 ##
 ###   *Scroll* or type "help" to get started
