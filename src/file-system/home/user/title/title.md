@@ -5,7 +5,7 @@
 
 #  *I'm John Y*
 
-##   • Tech Guy
+##   • Northern VA
 ##   • Doing random stuff
 
 
