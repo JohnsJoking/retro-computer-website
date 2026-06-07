@@ -6,7 +6,7 @@
 #  *I'm John Y*
 
 ##   • Northern VA
-##   • Doing random stuff
+##   • Systems Analyst
 
 
 
