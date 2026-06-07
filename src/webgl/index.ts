@@ -66,7 +66,7 @@ export default function WebGL() {
     const scene = new THREE.Scene();
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.55);
     scene.add(ambientLight);
-    scene.background = new THREE.Color(0xFFB38E);
+    scene.background = new THREE.Color(0x4682B4);
 
     /**
      * Camera
@@ -212,7 +212,7 @@ export default function WebGL() {
     computerGroup.add(assists.keyboardMesh);
 
     assists.shadowPlaneMesh.material = new THREE.MeshBasicMaterial({
-      map: assists.bakeFloorTexture,
+      color: 0x97a5b0,
     });
     computerGroup.add(assists.shadowPlaneMesh);
 

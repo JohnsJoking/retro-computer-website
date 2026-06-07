@@ -2,7 +2,11 @@
 @import url("./nav.css");
 
 :root {
-  --color: #454647;
+  --bg: #4682b4;
+  --color: #ffffff;
+  --ink: #2a4e6c;
+  --accent: #b0c4de;
+  --accent-soft: #dfe6ed;
 }
 
 @font-face {
@@ -22,7 +26,7 @@
 html,
 body {
   overflow-x: hidden;
-  background-color: #FFB38E;
+  background-color: var(--bg);
   font-family: "chill", sans-serif;
   font-size: 18px;
   -webkit-text-size-adjust: 100%;
@@ -79,8 +83,8 @@ body {
 }
 
 #loading {
-  color: #f6d4b1;
-  background-color: var(--color);
+  color: var(--accent-soft);
+  background-color: var(--ink);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -109,8 +113,8 @@ body {
   position: relative;
   width: 100%;
   height: 64px;
-  border: dashed 2px #f6d4b1;
-  box-shadow: 2px 2px 0px var(--color), 6px 6px 0px rgba(246, 212, 177, 0.7);
+  border: dashed 2px var(--accent-soft);
+  box-shadow: 2px 2px 0px var(--ink), 6px 6px 0px rgba(223, 230, 237, 0.7);
 }
 
 #loading-bar-progress {
@@ -119,7 +123,7 @@ body {
   bottom: 2px;
   left: 2px;
   right: 2px;
-  background-color: #f6d4b1;
+  background-color: var(--accent-soft);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.2s;
@@ -127,8 +131,8 @@ body {
 
 h1 {
   display: inline-block;
-  color: #FFB26F;
-  background-color: var(--color);
+  color: var(--accent);
+  background-color: var(--ink);
   font-family: "public-pixel", monospace;
   font-size: 2em;
   padding: 16px;
@@ -143,8 +147,8 @@ h2 {
   display: inline-block;
   font-size: 1.2em;
   text-align: center;
-  color: #FFB26F;
-  background-color: var(--color);
+  color: var(--accent);
+  background-color: var(--ink);
   font-family: "public-pixel", monospace;
   padding: 16px;
   padding-top: 4px;
@@ -203,7 +207,7 @@ p {
   display: inline-block;
   padding: 4px 8px;
   border: dashed 1px var(--color);
-  box-shadow: 1px 1px 0px #f6d4b1, 4px 4px 0px rgba(82, 82, 82, 0.25);
+  box-shadow: 1px 1px 0px var(--accent-soft), 4px 4px 0px rgba(82, 82, 82, 0.25);
 }
 
 .image {
@@ -219,7 +223,7 @@ p {
   box-sizing: border-box;
   width: clamp(0px, 95vw, 1200px);
 
-  box-shadow: 1px 1px 0px #f6d4b1, 6px 6px 0px rgba(82, 82, 82, 0.25);
+  box-shadow: 1px 1px 0px var(--accent-soft), 6px 6px 0px rgba(82, 82, 82, 0.25);
 }
 
 main {
@@ -273,12 +277,12 @@ a {
 }
 a:hover {
   transform: scale(1.1);
-  box-shadow: 1px 1px 0px #f6d4b1, 4px 4px 0px rgba(82, 82, 82, 0.25);
+  box-shadow: 1px 1px 0px var(--accent-soft), 4px 4px 0px rgba(82, 82, 82, 0.25);
 }
 
 a:active {
   transform: scale(1);
-  box-shadow: 1px 1px 0px #f6d4b1, 3px 3px 0px rgba(82, 82, 82, 0.4);
+  box-shadow: 1px 1px 0px var(--accent-soft), 3px 3px 0px rgba(82, 82, 82, 0.4);
 }
 
 .btn {
@@ -288,12 +292,12 @@ a:active {
   display: inline-flex;
   gap: 0.25rem;
   box-shadow: 6px 6px 0px rgba(82, 82, 82, 0.25);
-  background-color: var(--color);
-  color: #f6d4b1;
+  background-color: var(--ink);
+  color: var(--accent-soft);
   cursor: pointer;
   transition: all 0.3s;
   padding: 4px 24px;
-  border: #FFB26F solid 1px;
+  border: var(--accent) solid 1px;
   text-decoration: none;
 }
 
@@ -319,7 +323,7 @@ a:active {
   align-items: center;
   justify-content: center;
 
-  box-shadow: 1px 1px 0px #f6d4b1, 6px 6px 0px rgba(82, 82, 82, 0.25);
+  box-shadow: 1px 1px 0px var(--accent-soft), 6px 6px 0px rgba(82, 82, 82, 0.25);
 }
 
 .portrait-tag {
@@ -344,6 +348,6 @@ a:active {
   background-image: url(img/bg.png);
   background-size: contain;
   filter: blur(30px);
-  color: #f6d4b1;
-  border: #f6d4b1 solid 1px;
+  color: var(--accent-soft);
+  border: var(--accent-soft) solid 1px;
 }
