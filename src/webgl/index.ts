@@ -189,9 +189,25 @@ export default function WebGL() {
     );
     plane.scale.x = 1.33;
 
-    // Materials
-    const computerMaterial = new THREE.MeshBasicMaterial({
-      map: assists.bakeTexture,
+    // Materials — desaturate the warm bake texture to grey via shader
+    const computerMaterial = new THREE.ShaderMaterial({
+      uniforms: { map: { value: assists.bakeTexture } },
+      vertexShader: `
+        varying vec2 vUv;
+        void main() {
+          vUv = uv;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: `
+        uniform sampler2D map;
+        varying vec2 vUv;
+        void main() {
+          vec4 c = texture2D(map, vUv);
+          float g = dot(c.rgb, vec3(0.299, 0.587, 0.114));
+          gl_FragColor = vec4(vec3(g) * vec3(0.70, 0.74, 0.82), c.a);
+        }
+      `,
     });
 
     /**
@@ -212,7 +228,7 @@ export default function WebGL() {
     computerGroup.add(assists.keyboardMesh);
 
     assists.shadowPlaneMesh.material = new THREE.MeshBasicMaterial({
-      color: 0x97a5b0,
+      color: 0x3d5060,
     });
     computerGroup.add(assists.shadowPlaneMesh);
 
